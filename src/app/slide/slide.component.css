@@ -1,0 +1,16 @@
+.slide {
+    position: relative;
+}
+
+.slide-image {
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3px 10px;
+    background-color: #00000080;
+    color: #fff;
+}

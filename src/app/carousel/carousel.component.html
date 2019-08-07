@@ -1,0 +1,10 @@
+<div class="carousel {{isBig ? 'size-big' : 'size-small'}}">
+    <ul #elemImages class="carousel-images">
+        <li *ngFor="let image of images" id="{{image.id}}" class="image">
+            <app-slide [image]="image" [isBig]="isBig"></app-slide>
+        </li>
+    </ul>
+    <ul class="carousel-dots">
+        <li *ngFor="let image of images" class="dot {{image === selectedImage ? 'selected' : ''}}" (click)="selectImage(image)"></li>
+    </ul>
+</div>

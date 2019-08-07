@@ -1,0 +1,56 @@
+.carousel {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel.size-big {
+    max-width: 1024px;
+    max-height: 200px;
+}
+
+.carousel.size-small {
+    max-width: 424px;
+    max-height: 306px;
+}
+
+.carousel-images {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    transition: all 400ms linear;
+}
+
+.image {
+    display: inline-block;
+}
+
+.carousel-dots {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    background-color: #333;
+    border: 1px solid #00000080;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
+
+.dot.selected {
+    background-color: #fff;
+}

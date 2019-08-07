@@ -1,0 +1,39 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.block {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.block-text {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.block-carousel {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* ========================================================================== */
+/* MEDIA QUERIES */
+/* ========================================================================== */
+
+@media only screen and (max-width: 639px) and (min-width: 0) {
+    .block-carousel {
+        display: block;
+    }
+}
